@@ -5,9 +5,16 @@
     ./vesktop.nix
   ];
 
-  home.packages = with pkgs; [
-    steam
-    gamemode
-    lutris
-  ];
+  home = {
+    packages = with pkgs; [
+      protonup
+      lutris
+      noisetorch
+      brave
+    ];
+
+    sessionVariables = {
+      STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/cmopatibilitytools.d";
+    };
+  };
 }

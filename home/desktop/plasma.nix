@@ -2,6 +2,10 @@
   programs.plasma = {
     enable = true;
 
+    workspace = {
+      lookAndFeel = "org.kde.breezedark.desktop";
+    };
+
     shortcuts = {
       "kwin" = {
         "Window Fullscreen" = "Meta+F";
