@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   imports = [
     ../common/home.nix
-    ./plasma.nix
   ];
 
   home.packages = with pkgs; [
