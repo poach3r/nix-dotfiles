@@ -9,7 +9,6 @@
     packages = with pkgs; [
       protonup
       lutris
-      noisetorch
       brave
     ];
 
