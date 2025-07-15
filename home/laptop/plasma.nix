@@ -49,6 +49,7 @@
 
     panels = [
       {
+        opacity = "opaque";
         location = "top";
         height = 30;
         floating = false;
@@ -66,6 +67,7 @@
       }
 
       {
+        opacity = "opaque";
         location = "bottom";
         height = 48;
         floating = true;
