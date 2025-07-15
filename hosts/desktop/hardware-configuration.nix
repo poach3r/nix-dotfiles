@@ -28,18 +28,14 @@
     options = ["fmask=0077" "dmask=0077"];
   };
 
+  fileSystems."/home/poacher/ssd2" = {
+    device = "/dev/disk/by-uuid/a91ee385-cbf7-404b-b32d-3c269a2750e7";
+    fsType = "ext4";
+  };
+
   swapDevices = [
     {device = "/dev/disk/by-uuid/1cfa4436-9d03-477a-ad67-58e84dc05bb1";}
   ];
-
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp6s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp4s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp5s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
