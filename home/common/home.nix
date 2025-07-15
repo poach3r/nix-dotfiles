@@ -23,6 +23,10 @@
       nh
     ];
 
+    sessionVariables = {
+      FLAKE = "/home/poacher/nix-dotfiles";
+    };
+
     stateVersion = "25.05";
   };
 }
