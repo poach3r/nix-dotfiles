@@ -21,7 +21,6 @@
       vlc
       gh
       nh
-      direnv
     ];
 
     stateVersion = "25.05";
