@@ -28,7 +28,7 @@
     nixosConfigurations = {
       laptop = nixpkgs.lib.nixosSystem {
         modules = [
-          ./hosts/laptop/configuration.nix
+          ./hosts/laptop
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -41,7 +41,7 @@
 
       desktop = nixpkgs.lib.nixosSystem {
         modules = [
-          ./hosts/desktop/configuration.nix
+          ./hosts/desktop
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
