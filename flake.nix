@@ -15,7 +15,7 @@
       inputs.home-manager.follows = "home-manager";
     };
 
-    arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
+    # arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
   };
 
   outputs = inputs @ {
@@ -26,8 +26,7 @@
     ...
   }: {
     nixosConfigurations = {
-      "laptop" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+      laptop = nixpkgs.lib.nixosSystem {
         modules = [
           ./hosts/laptop/configuration.nix
           home-manager.nixosModules.home-manager
@@ -40,8 +39,7 @@
         ];
       };
 
-      "desktop" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
+      desktop = nixpkgs.lib.nixosSystem {
         modules = [
           ./hosts/desktop/configuration.nix
           home-manager.nixosModules.home-manager
