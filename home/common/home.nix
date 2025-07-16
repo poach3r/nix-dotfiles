@@ -23,6 +23,7 @@
       nh
       kdePackages.kalk
       kdePackages.kget
+      kdePackages.neochat
     ];
 
     sessionVariables = {
