@@ -15,15 +15,16 @@
       fastfetch
       git
       firefox
-      kdePackages.ghostwriter
       fzf
       ripgrep
       vlc
       gh
       nh
+      converseen
       kdePackages.kalk
       kdePackages.kget
       kdePackages.neochat
+      kdePackages.klevernotes
     ];
 
     sessionVariables = {
