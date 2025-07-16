@@ -21,6 +21,8 @@
       vlc
       gh
       nh
+      kdePackages.kalk
+      kdePackages.kget
     ];
 
     sessionVariables = {

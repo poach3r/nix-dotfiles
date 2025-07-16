@@ -10,6 +10,7 @@
       protonup
       lutris
       brave
+      kdePackages.kasts
     ];
 
     sessionVariables = {
