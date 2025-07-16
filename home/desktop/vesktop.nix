@@ -5,6 +5,7 @@
       minimizeToTray = false;
       tray = false;
       hardwareAcceleration = true;
+      customTitleBar = true;
     };
   };
 }
