@@ -33,7 +33,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.poacher = import ./home/laptop/home.nix;
+            home-manager.users.poacher = import ./home/laptop;
             home-manager.sharedModules = [plasma-manager.homeManagerModules.plasma-manager];
           }
         ];
@@ -46,7 +46,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.poacher = import ./home/desktop/home.nix;
+            home-manager.users.poacher = import ./home/desktop;
             home-manager.sharedModules = [plasma-manager.homeManagerModules.plasma-manager];
           }
         ];

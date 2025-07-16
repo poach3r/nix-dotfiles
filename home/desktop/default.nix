@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   imports = [
-    ../common/home.nix
+    ../common
     ./plasma.nix
     ./vesktop.nix
   ];
