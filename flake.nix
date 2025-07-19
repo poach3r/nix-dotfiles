@@ -61,7 +61,7 @@
       deck = nixpkgs.lib.nixosSystem {
         modules = [
           ./hosts/deck
-          jovian.nixosModules.jovian
+          jovian.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -70,6 +70,7 @@
             home-manager.sharedModules = [plasma-manager.homeManagerModules.plasma-manager];
           }
         ];
+        specialArgs = { inherit jovian; };
       };
     };
   };
