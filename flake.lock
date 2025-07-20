@@ -42,6 +42,27 @@
         "type": "github"
       }
     },
+    "lsfg-vk-flake": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1752956617,
+        "narHash": "sha256-fGAeF0//tXe2Q8t5CwQlcWZ4xvsiodWirnQZ/xlouHk=",
+        "owner": "pabloaul",
+        "repo": "lsfg-vk-flake",
+        "rev": "ec1b66adcb83276d60251b879f0f273e4eef823a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pabloaul",
+        "ref": "main",
+        "repo": "lsfg-vk-flake",
+        "type": "github"
+      }
+    },
     "nix-github-actions": {
       "inputs": {
         "nixpkgs": [
@@ -107,6 +128,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "jovian": "jovian",
+        "lsfg-vk-flake": "lsfg-vk-flake",
         "nixpkgs": "nixpkgs",
         "plasma-manager": "plasma-manager"
       }

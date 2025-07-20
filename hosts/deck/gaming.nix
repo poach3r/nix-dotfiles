@@ -22,6 +22,11 @@
       enableGyroDsuService = true;
     };
 
-    decky-loader.enable = true;
+    decky-loader = {
+      enable = true;
+      user = "poacher";
+    };
   };
+
+  services.lsfg-vk.enable = true;
 }

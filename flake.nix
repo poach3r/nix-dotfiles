@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    lsfg-vk-flake = {
+      url = "github:pabloaul/lsfg-vk-flake/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # arkenfox.url = "github:dwarfmaster/arkenfox-nixos";
   };
 
@@ -29,6 +34,7 @@
     home-manager,
     plasma-manager,
     jovian,
+    lsfg-vk-flake,
     ...
   }: {
     nixosConfigurations = {
@@ -48,6 +54,7 @@
       desktop = nixpkgs.lib.nixosSystem {
         modules = [
           ./hosts/desktop
+          lsfg-vk-flake.nixosModules.default
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -61,6 +68,7 @@
       deck = nixpkgs.lib.nixosSystem {
         modules = [
           ./hosts/deck
+          lsfg-vk-flake.nixosModules.default
           jovian.nixosModules.default
           home-manager.nixosModules.home-manager
           {
@@ -70,7 +78,7 @@
             home-manager.sharedModules = [plasma-manager.homeManagerModules.plasma-manager];
           }
         ];
-        specialArgs = { inherit jovian; };
+        specialArgs = {inherit jovian;};
       };
     };
   };
