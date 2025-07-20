@@ -5,6 +5,6 @@
     ./networking.nix
     ./users.nix
     ./gaming.nix
-    ./plasma
+    ./plasma.nix
   ];
 }
