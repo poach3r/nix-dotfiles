@@ -21,8 +21,8 @@
       gh
       nh
       converseen
+      rar
       kdePackages.kalk
-      kdePackages.kget
       kdePackages.neochat
       kdePackages.klevernotes
     ];

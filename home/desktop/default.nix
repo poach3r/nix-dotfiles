@@ -8,7 +8,7 @@
   home = {
     packages = with pkgs; [
       protonup
-      lutris
+      heroic
       brave
     ];
 
