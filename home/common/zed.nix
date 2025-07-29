@@ -9,8 +9,9 @@
     extensions = ["nix"];
 
     userSettings = {
-      lsp."nil"."initialization_options"."formatting"."command" = ["alejandra" "--quiet" "--"];
-      languages."Nix"."language_servers" = ["nil" "!nixd"];
+      lsp.nil.binary.path = "${pkgs.nil}/bin/nil";
+      lsp.nil.initialization_options.formatting.command = ["alejandra" "--quiet" "--"];
+      languages.Nix.language_servers = ["nil" "!nixd"];
     };
   };
 }
