@@ -2,6 +2,7 @@
   imports = [
     ./shell.nix
     ./zed.nix
+    ./chromium.nix
     #./firefox.nix
   ];
 
@@ -14,7 +15,6 @@
     packages = with pkgs; [
       fastfetch
       git
-      firefox
       fzf
       ripgrep
       vlc
@@ -29,6 +29,7 @@
 
     sessionVariables = {
       FLAKE = "/home/poacher/nix-dotfiles";
+      NIXPKGS_ALLOW_UNFREE = 1;
     };
 
     stateVersion = "25.05";
