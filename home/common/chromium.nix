@@ -46,6 +46,12 @@
         sha256 = "042p1iksvh5wy2k59h9hq67xq3i38mhzyhxdnka3rj7c2ff3bri6";
         version = "0.6.4";
       })
+      # mini light theme
+      (createChromiumExtension {
+        id = "cfpabimfmpejjechlhcamiikffkccpgd";
+        sha256 = "1wqw6nj5ld27a8vb6dvapbs9cwhvapp5dp7z1vr9ijdzmmdrq7xh";
+        version = "1.3";
+      })
     ];
   };
 }
