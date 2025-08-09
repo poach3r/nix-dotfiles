@@ -23,15 +23,28 @@
       createChromiumExtension = createChromiumExtensionFor (lib.versions.major pkgs.ungoogled-chromium.version);
     in [
       (createChromiumExtension {
-        # https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh?hl=en
+        # ubo-lite
         id = "ddkjiahejlhfcafbddmgiahcphecmpfh";
         sha256 = "14wwibgqzf8h26vn9fpxvc2z8lxi80psb9vdwy9bv9rhl19vky83";
         version = "2025.804.1547";
       })
+      # sponsorblock
       (createChromiumExtension {
         id = "mnjggcdmjocbbbhaepdhchncahnbgone";
         sha256 = "0sxkrnpn3whi21zvqhr59z74ga8h5clmh8jbqhrgncab33n4d81m";
         version = "5.14";
+      })
+      # pip
+      (createChromiumExtension {
+        id = "hkgfoiooedgoejojocmhlaklaeopbecg";
+        sha256 = "0rv874709gdz15q96lr1gikx8qzg3gkyg2lrav425kzx05y8v99m";
+        version = "1.14";
+      })
+      # allow right click
+      (createChromiumExtension {
+        id = "hnafhkjheookmokbkpnfpmemlppjdgoi";
+        sha256 = "042p1iksvh5wy2k59h9hq67xq3i38mhzyhxdnka3rj7c2ff3bri6";
+        version = "0.6.4";
       })
     ];
   };
