@@ -36,7 +36,16 @@
     jovian,
     lsfg-vk-flake,
     ...
-  }: {
+  }: let
+    pkgs = nixpkgs.legacyPackages."x86_64-linux";
+  in {
+    devShells.x86_64-linux.default = pkgs.mkShell {
+      buildInputs = with pkgs; [
+        nil
+        alejandra
+      ];
+    };
+
     nixosConfigurations = {
       laptop = nixpkgs.lib.nixosSystem {
         modules = [
